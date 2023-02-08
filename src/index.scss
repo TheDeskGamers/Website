@@ -1,0 +1,14 @@
+@use '../../../SasScript/src/ss';
+
+body {
+   @include ss.reset;
+}
+
+#root {
+   @include ss.flex;
+
+   overflow: hidden;
+}
+
+@import './ads';
+@import './app';

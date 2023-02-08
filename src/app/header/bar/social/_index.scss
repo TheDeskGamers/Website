@@ -1,0 +1,20 @@
+#social {
+   @include ss.flex;
+
+   .icon {
+      @include ss.model(fit-content);
+
+      display: block;
+      
+      :hover {
+         background-color: ss.$gray-web;
+      }
+      
+      > img {
+         @include ss.border-radius;
+         @include ss.model(50px);
+
+         padding: 7px;
+      }
+   }
+}
