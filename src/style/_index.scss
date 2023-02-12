@@ -1,0 +1,33 @@
+#app {
+   @include ss.padding;
+
+   overflow: hidden;
+   width: 90%;
+
+   header {
+      > #bar {
+         @include ss.flex($justify-content: space-between);
+         @include ss.position(sticky, $top: 0px, $left: 0px);
+
+         > #contacts {
+            @include ss.flex;
+         }
+      }
+
+      > #cred > div {
+         @include ss.flex($justify-content: space-between, $align-items: center);
+
+         > #logo {
+            @include ss.model(250px);
+
+            border-radius: 50%;
+         }
+      }
+   }
+
+   > #store > #grid {
+      @include ss.flex;
+   }
+}
+
+@import './components';

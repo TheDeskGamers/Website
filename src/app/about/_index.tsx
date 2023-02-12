@@ -1,10 +1,8 @@
-import H from './h';
-
 export default function About() {
    return (
       <div>
-         <H />
-         <span>Description</span>
+         <h4>About</h4>
+         <span>{'{description}'}</span>
       </div>
    );
 }

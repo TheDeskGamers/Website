@@ -1,5 +1,7 @@
 @use '../../../SasScript/src/ss';
 
+$accent-color: #0088ff;
+
 body {
    @include ss.reset;
 }
@@ -10,5 +12,6 @@ body {
    overflow: hidden;
 }
 
-@import './ads';
-@import './app';
+@import './style';
+
+@import './_ads';

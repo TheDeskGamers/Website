@@ -1,10 +1,9 @@
-import H from './h';
-
 export default function Timeline() {
    return (
       <div>
-         <H />
-         <div>Timeline</div>
+         <h4>Timeline</h4>
+         <span>Some important dates for us</span>
+         <div>{'{timeline}'}</div>
       </div>
    );
 }

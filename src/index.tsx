@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 
-import Ads from './ads/_index';
+import Ads from './_ads/_index';
 import App from './app/_index';
 
 import './index.scss';

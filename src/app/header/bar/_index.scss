@@ -1,6 +1,0 @@
-#bar {
-   @include ss.flex($justify-content: space-between);
-   @include ss.position(sticky, $top: 0px, $left: 0px);
-}
-
-@import './social';

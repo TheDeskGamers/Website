@@ -1,11 +1,8 @@
-import Download from './download';
-import Img from './img';
-
-export default function Game() {
+export default function Game({ title, img }: { title: string; img: string }) {
    return (
-      <div>
-         <Img />
-         <Download />
+      <div className='game'>
+         <img src={img} />
+         <button>Download</button>
       </div>
    );
 }
