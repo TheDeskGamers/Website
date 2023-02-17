@@ -1,5 +1,5 @@
 import Lang from './lang';
-import Social from './contacts/_index';
+import Social from './contacts';
 
 export default function Bar() {
    return <div id='bar'>

@@ -5,14 +5,14 @@
    },
    {
       "link": "https://www.tiktok.com/@thedeskgamers",
-      "icon": ""
-   },
-   {
-      "link": "https://www.github.com/thedeskgamers",
-      "icon": "https://img.icons8.com/ios-glyphs/120/null/github.png"
+      "icon": "https://img.icons8.com/color-glass/96/null/tiktok.png"
    },
    {
       "link": "https://discord.gg/vnG2mw3RNc",
       "icon": "https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg"
+   },
+   {
+      "link": "https://www.github.com/thedeskgamers",
+      "icon": "https://img.icons8.com/ios-glyphs/120/null/github.png"
    }
 ]

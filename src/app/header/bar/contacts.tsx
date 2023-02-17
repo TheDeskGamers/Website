@@ -1,6 +1,6 @@
-import Social from '../../../../components/social';
+import Social from '../../../components/social';
 
-import social from '../../../../json/social.json';
+import social from '../../../json/social.json';
 
 export default function Contacts() {
    return (

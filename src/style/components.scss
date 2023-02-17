@@ -13,7 +13,7 @@
    }
 
    img {
-      @include ss.model(130px);
+      @include ss.model(150px);
 
       border-radius: inherit;
       border-bottom-right-radius: 0;
@@ -33,6 +33,7 @@
    @include ss.model(fit-content);
 
    display: block;
+   height: 50px;
 
    :hover {
       background-color: ss.$gray-web;
@@ -40,7 +41,7 @@
 
    > img {
       @include ss.border-radius('inline');
-      @include ss.model(40px);
+      @include ss.model(50px);
 
       padding: 5px;
    }
