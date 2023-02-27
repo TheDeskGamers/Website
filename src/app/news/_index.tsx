@@ -1,6 +1,6 @@
-import Post from '../../components/post';
+import news from '../../assets/json/news.json';
 
-import news from '../../json/news.json';
+import Post from '../../components/post';
 
 export default function News() {
    return (
@@ -11,6 +11,7 @@ export default function News() {
                <Post
                   title={obj.title}
                   date={obj.date}
+                  link={obj.link}
                   desc={obj.desc}
                />
             ))}

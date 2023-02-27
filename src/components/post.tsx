@@ -1,7 +1,9 @@
-export default function Post({ title, date, desc }: { title: string; date: string; desc: string }) {
+export default function Post({ title, date, link, desc }: { date: string; desc: string; link: string; title: string }) {
    return (
       <div className='post'>
-         <div className='header'>
+         <div
+            className='header'
+            onClick={() => window.open(link)}>
             <span>{title}</span>
             <span>{date}</span>
          </div>

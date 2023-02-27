@@ -1,0 +1,45 @@
+#app {
+   @include ss.padding;
+
+   overflow: hidden;
+   width: 100vw;
+
+   > header {
+      > #bar {
+         @include ss.flex($justify-content: space-between);
+         @include ss.position(sticky, $top: 0px, $left: 0px);
+
+         > #contacts {
+            @include ss.flex;
+         }
+      }
+
+      > #cred > div {
+         @include ss.flex($justify-content: space-between, $align-items: center);
+
+         > h1 {
+            margin: 0;
+         }
+
+         > #logo {
+            @include ss.model(250px);
+
+            border-radius: 50%;
+            margin-right: 50px;
+         }
+      }
+   }
+
+   > #store > #grid {
+      @include ss.flex;
+
+      #wip {
+         @include ss.model(185px, 185px);
+         @include ss.flex($justify-content: center, $align-items: center, $gap: 10px);
+
+         text-align: center;
+      }
+   }
+}
+
+@import './components';

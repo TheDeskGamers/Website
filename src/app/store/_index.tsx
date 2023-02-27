@@ -1,6 +1,7 @@
-import Game from './game/_index';
+import store from '../../assets/json/store.json';
 
-import store from '../../json/store.json';
+import Game from '../../components/game';
+import Wip from './wip';
 
 export default function Store() {
    return (
@@ -10,10 +11,11 @@ export default function Store() {
             <div id='grid'>
                {store.map(obj => (
                   <Game
-                     title={obj.title}
-                     img={obj.img}
+                     name={obj.name}
+                     ver={obj.ver}
                   />
                ))}
+               <Wip />
             </div>
          </div>
       </>
