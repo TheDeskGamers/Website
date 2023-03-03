@@ -7,6 +7,7 @@ export default function Contacts() {
       <div id='contacts'>
          {social.map(obj => (
             <Social
+               key={obj.name}
                link={obj.link}
                icon={obj.icon}
             />

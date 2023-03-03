@@ -1,17 +1,21 @@
 [
    {
+      "name": "Instagram",
       "link": "https://www.instagram.com/thedeskgamers",
       "icon": "https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg"
    },
    {
+      "name": "TikTok",
       "link": "https://www.tiktok.com/@thedeskgamers",
       "icon": "https://img.icons8.com/color-glass/96/null/tiktok.png"
    },
    {
+      "name": "Discord",
       "link": "https://discord.gg/vnG2mw3RNc",
       "icon": "https://www.vectorlogo.zone/logos/discordapp/discordapp-tile.svg"
    },
    {
+      "name": "GitHub",
       "link": "https://www.github.com/thedeskgamers",
       "icon": "https://img.icons8.com/ios-glyphs/120/null/github.png"
    }

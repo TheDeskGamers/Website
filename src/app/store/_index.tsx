@@ -11,8 +11,10 @@ export default function Store() {
             <div id='grid'>
                {store.map(obj => (
                   <Game
+                     key={obj.name}
                      name={obj.name}
                      ver={obj.ver}
+                     platform={obj.platform}
                   />
                ))}
                <Wip />

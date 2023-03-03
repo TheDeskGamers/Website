@@ -9,6 +9,7 @@ export default function News() {
          <div>
             {news.slice(news.length - 3).map(obj => (
                <Post
+                  key={obj.title}
                   title={obj.title}
                   date={obj.date}
                   link={obj.link}

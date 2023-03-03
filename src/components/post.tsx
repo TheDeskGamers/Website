@@ -1,4 +1,4 @@
-export default function Post({ title, date, link, desc }: { date: string; desc: string; link: string; title: string }) {
+export default function Post({ title, date, link, desc }: { date: string; desc: string | null; link: string; title: string }) {
    return (
       <div className='post'>
          <div
