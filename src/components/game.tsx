@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import JSZip from 'jszip';
 
 export default function Game({ name, ver, platform }: { name: string; platform: string[]; ver: string }) {
    const [img, setImg] = useState(null!);
@@ -11,18 +12,24 @@ export default function Game({ name, ver, platform }: { name: string; platform: 
       setImg(imgSrc);
    };
 
-   const download = () => {
-      const url = `${path}/${name} ${ver} ${platform[0]}`;
+   const download = async () => {
+      let path = `./assets/db/${name}/${name} ${ver} ${platform}`;
+
+      let zip = new JSZip();
+
+      let files = await window.fetch(encodeURIComponent(path));
+
+      zip.file(path, await files.arrayBuffer());
+
+      let blob = await zip.generateAsync({ type: 'blob' });
 
       const link = document.createElement('a');
-      link.href = url;
-      link.download = 'app.apk';
+      
+      link.href = path;
 
-      document.body.appendChild(link);
+      link.download = 'Download.apk';
 
       link.click();
-
-      document.body.removeChild(link);
    };
 
    useEffect(() => {
