@@ -4,7 +4,7 @@ export default function Wip() {
          id='wip'
          className='game'>
          <span>Work in progress</span>
-         <span>New game comming soon</span>
+         <span>New game coming soon</span>
       </div>
    );
 }
